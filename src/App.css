@@ -28,6 +28,35 @@
   color: #61dafb;
 }
 
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+}
+
+.layer-1,
+.layer-2,
+.layer-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.layer-1 {
+  transform: translateZ(-2px) scale(3);
+}
+
+.layer-2 {
+  transform: translateZ(-1px) scale(2);
+}
+
+.layer-3 {
+  transform: translateZ(0px) scale(1);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
