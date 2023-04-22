@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
 import ContactUs from './components/pages/ContactUs';
@@ -12,7 +12,7 @@ import Consulting from './components/pages/Consulting';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path='/' exact component={Home} />
@@ -23,7 +23,7 @@ function App() {
         <Route path='/marketing' component={Marketing} />
         <Route path='/consulting' component={Consulting} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
