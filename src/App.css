@@ -12,12 +12,11 @@
 .sign-up,
 .marketing,
 .consulting {
-  display: flex;
+  display:flex;
   height: 90vh;
   align-items: center;
   justify-content: center;
   align-items: center;
-  height: 90vh;
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -52,3 +51,15 @@
 .consulting {
   background-image: url('./images/img-5.jpg');
 }
+
+.aboveNav {
+  height:279px;
+  width:100vw;
+  background: #242222;
+}
+
+  .belowNav {
+    height:900px;
+    width:100vw;
+    background-image: url('./images/img-4.jpg');
+  }
