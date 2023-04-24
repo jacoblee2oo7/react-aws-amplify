@@ -3,6 +3,7 @@ import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Dropdown from './Dropdown';
+import { ReactComponent as NavBarLogo } from '../images/LEE.svg';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -31,7 +32,7 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          <svg src='./images/img-1.jpg'></svg>
+	        <NavBarLogo width="50%" padding="10%"/>
           <i class='fab fa-firstdraft' />
         </Link>
         <div className='menu-icon' onClick={handleClick}>
@@ -53,18 +54,9 @@ function Navbar() {
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Services <i className='fas fa-caret-down' />
+              Portfolio <i className='fas fa-caret-down' />
             </Link>
             {dropdown && <Dropdown />}
-          </li>
-          <li className='nav-item'>
-            <Link
-              to='/products'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              Products
-            </Link>
           </li>
           <li className='nav-item'>
             <Link
@@ -72,7 +64,7 @@ function Navbar() {
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Contact Us
+              Message Me
             </Link>
           </li>
           <li>
@@ -81,7 +73,7 @@ function Navbar() {
               className='nav-links-mobile'
               onClick={closeMobileMenu}
             >
-              Sign Up
+              Portfolio
             </Link>
           </li>
         </ul>
