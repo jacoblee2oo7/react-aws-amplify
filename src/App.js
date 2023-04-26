@@ -4,8 +4,7 @@ import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Services from './components/pages/Services';
-import ContactUs from './components/pages/ContactUs';
-import SignUp from './components/pages/SignUp';
+import MessageMe from './components/pages/message-me';
 import projectmanagement from './components/pages/projectmanagement';
 import financialmanagement from './components/pages/financialmanagement';
 import safetymanagement from './components/pages/safetymanagement';
@@ -22,8 +21,7 @@ function App() {
       <Routes>
         <Route path='/' exact component={Home} />
         <Route path='/services' component={Services} />
-        <Route path='/contact-us' component={ContactUs} />
-        <Route path='/sign-up' component={SignUp} />
+        <Route path='/message-me' component={MessageMe} />
         <Route path='/projectmanagement' component={projectmanagement} />
         <Route path='/financialmanagement' component={financialmanagement} />
         <Route path='/safetymanagement' component={safetymanagement} />
